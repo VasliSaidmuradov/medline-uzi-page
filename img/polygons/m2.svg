@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 165" width="192" height="165">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.149;fill: none;stroke: #3bafda;stroke-linecap:round;stroke-linejoin:round } 
+	</style>
+	<path id="Многоугольник 1" class="shp0" d="M144.25,0h-95.5l-47.75,82.5l47.75,82.5h95.5l47.75,-82.5z" />
+</svg>

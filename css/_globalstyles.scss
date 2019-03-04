@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica bold";
+  src: url("/fonts/Helvetica-Neue-Condensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica light";
+  src: url("/fonts/HelveticaNeueLight.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+// Colors
+
+$white: #fff;
+$primary: #00bfe4;
+// $secondary: #575656;
+$highlight: #2046f2;
+$bg-secondary: #fafafa;
+$text-color: #545454;
+
+html {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+// Wrappers
+
+.container {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: $text-color;
+  background-color: #00000000;
+
+  &-small {
+    @extend .container;
+    width: 980px;
+  }
+
+  &-large {
+    @extend .container;
+    width: 1170px;
+    max-width: 72vw;
+  }
+}
+
+// Buttons
+
+.button {
+  // text-decoration: none;
+  display: inline-block;
+  width: 130px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: .5rem;
+  text-align: center;
+  font-size: .8rem;
+
+  &-red {
+    background-image: linear-gradient(0deg, #a24942 0%, #cb342e 100%);
+  }
+
+  &-2 {
+    line-height: 1;
+    margin-left: 1.1rem;
+
+    span {
+      display: inline-block;
+      margin-top: .5rem;
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient(#0084c5, #00bee3);
+  }
+}
+
+// Position
+
+.text-center {
+  text-align: center;
+}
+
+.div_center {
+  margin: auto;
+}
+
+.vert-align {
+  vertical-align: middle;
+}
+
+// Fonts & Typogrphy
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Helvetica bold", Arial, sans-serif;
+  font-size: 3.4rem;
+  letter-spacing: .05rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 3rem 0;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+hr {
+  border: solid #cdcdcd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+  z-index: -1;
+}
+
+
+
+// SVG 
+
+.svg_arrow {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.rotateY180 {
+  transform: rotateY(180deg);
+}
