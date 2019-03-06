@@ -52,7 +52,7 @@
 
 header {
   $line-height: 5rem;
-  height: 170px;
+  height: 150px;
   background-color: #7fffd41a;
 
   ul {
@@ -67,7 +67,7 @@ header {
 
     nav {
       height: $line-height;
-      margin-top: 2rem;
+      margin-top: 1rem;
 
       .nav_logo {
         height: $line-height;
@@ -163,6 +163,7 @@ main {
       h1 {
         margin-top: 0;
         margin-bottom: 0;
+        line-height: 1;
 
         span {
           color: $primary;
@@ -213,7 +214,7 @@ main {
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        height: 100px;
+        height: 90px;
 
         div {
           margin: 0;
@@ -221,8 +222,9 @@ main {
           h6 {
             margin: 0;
             font-weight: normal;
-            line-height: 1.8;
+            line-height: 1.1;
             color: $primary;
+            font-size: .9rem;
           }
 
           p {
@@ -234,12 +236,16 @@ main {
         }
 
         .div_circle {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
           border: 1px solid #ff001d;
           text-align: center;
           margin-right: 1rem;
+
+          img {
+            width: 100%;
+          }
         }
 
         li {
@@ -249,6 +255,10 @@ main {
             margin-right: 2.5rem;
           }
         }
+      }
+
+      .advantages-mobile-wrap {
+        display: none;
       }
     }
   }
@@ -320,6 +330,14 @@ main {
           bottom: -10px;
           right: -100px;
         }
+      }
+
+      .hidden {
+        display: block;
+      }
+
+      .mobile {
+        display: none;
       }
 
       .container-large {
@@ -440,6 +458,14 @@ main {
   .allows {
     background-color: #7fffd41a;
 
+    .hidden {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
     .container-large {
 
       .row {
@@ -450,8 +476,6 @@ main {
           grid-template-columns: repeat(3, 1fr);
           justify-items: center;
         }
-
-
       }
     }
 
@@ -487,13 +511,25 @@ footer {
 
     ul {
       @include flex-base(space-between);
-      font-size: .9rem;
+      font-size: .8rem;
 
       li {
         @include flex-base(flex-start);
+        margin: 0 5px;
 
         div:first-child {
-          margin: 1rem;
+          margin: 0 1rem 0 0;
+
+          img {
+            width: 25px;
+          }
+        }
+
+        div:last-child {
+
+          img {
+            width: 80px;
+          }
         }
       }
     }

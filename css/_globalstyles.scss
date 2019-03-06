@@ -61,7 +61,7 @@ html {
 .button {
   // text-decoration: none;
   display: inline-block;
-  width: 130px;
+  width: 140px;
   height: 42px;
   line-height: 42px;
   border-radius: .5rem;
@@ -138,7 +138,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 hr {
@@ -163,4 +163,8 @@ hr {
 
 .rotateY180 {
   transform: rotateY(180deg);
+}
+
+.hidden {
+  display: none;
 }
