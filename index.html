@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/main.js"></script>
   <title>УЗИ сердца и сосудов</title>
 </head>
 
@@ -115,6 +114,7 @@
             </li>
           </ul>
 
+          <!-- Mobile advantages version -->
           <div class="advantages-mobile-wrap">
             <div class="advantages-photo">
               <img src="/img/hand.png" alt="Hand image">
@@ -254,9 +254,10 @@
           </div>
         </div>
 
-        <div class="container-large mobile">
-          <div class="row row-4">
-            <div class="row_item">
+        <!-- Mobile Order version -->
+        <div class="container-large order-mobile mobile">
+          <div class="row row-4 animatedParent" data-sequence="800">
+            <div class="row_item animated fadeInRight" data-id="1">
               <div class="round"></div>
               <div>
                 <p>Повысилось или понизилось артериальное давление</p>
@@ -267,7 +268,7 @@
                 </div>
               </div>
             </div>
-            <div class="row_item">
+            <div class="row_item animated fadeInRight" data-id="2">
               <div class="round"></div>
               <div>Появилась одышка</div>
               <div class="clipped">
@@ -276,7 +277,7 @@
                 </div>
               </div>
             </div>
-            <div class="row_item">
+            <div class="row_item animated fadeInRight" data-id="3">
               <div class="round"></div>
               <div>Частые головные боли,<br>головокружение, слабость</div>
               <div class="clipped">
@@ -285,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="row_item">
+            <div class="row_item animated fadeInRight" data-id="4">
               <div class="round"></div>
               <div>Отекает туловище, руки и<br>ноги, особенно во второй<br>половине дня</div>
               <div class="clipped">
@@ -294,34 +295,34 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row row-3">
-            <div class="row_item">
+            <!-- </div> -->
+            <!-- <div class="row row-3"> -->
+            <div class="row_item animated fadeInRight" data-id="5">
               <div class="round"></div>
+              <div>Учащенное или<br>замедленное сердцебиение</div>
               <div class="clipped">
                 <div>
                   <img src="img/icons/icon5-5.png" alt="Icon">
                 </div>
               </div>
-              <div>Учащенное или<br>замедленное сердцебиение</div>
             </div>
-            <div class="row_item">
+            <div class="row_item animated fadeInRight" data-id="6">
               <div class="round"></div>
+              <div>Перенесённый ранее<br>инфаркт</div>
               <div class="clipped">
                 <div>
                   <img src="img/icons/icon5-6.png" alt="Icon">
                 </div>
               </div>
-              <div>Перенесённый ранее<br>инфаркт</div>
             </div>
-            <div class="row_item">
+            <div class="row_item animated fadeInRight" data-id="7">
               <div class="round"></div>
+              <div>Профилактический<br>осмотр</div>
               <div class="clipped">
                 <div>
                   <img src="img/icons/icon5-7.png" alt="Icon">
                 </div>
               </div>
-              <div>Профилактический<br>осмотр</div>
             </div>
           </div>
           <div class="div_buttons text-center">
@@ -621,6 +622,7 @@
   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
   <script src="js/css3-animate-it.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

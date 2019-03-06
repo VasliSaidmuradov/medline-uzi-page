@@ -320,6 +320,32 @@
                 margin-top: 4px;
               }
             }
+
+            // Animation icons
+            @keyframes icon-nimation {
+              0% {
+                opacity: .8;
+                transform: scale(1, 1);
+                transform: rotate(-30deg);
+              }
+
+              50% {
+                opacity: .9;
+                // transform: scale(1.1, 1.1);
+              }
+
+              100% {
+                opacity: 1;
+                transform: scale(1.1, 1.1);
+              }
+            }
+
+            .div_circle {
+              animation-name: icon-nimation;
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+            }
           }
         }
 
@@ -399,7 +425,20 @@
 
         .mobile {
           display: block;
-          // font-size: .9rem;
+
+          // @keyframes fadeInRigth {
+          //   0% {
+          //     left: 100vw;
+          //   }
+
+          //   100% {
+          //     left: 0;
+          //   }
+          // }
+
+          // .row_item {
+          //   left: 100vw;
+          // }
         }
 
         .container-large {
