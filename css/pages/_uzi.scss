@@ -36,8 +36,8 @@
 // HEADER SECTION
 
 header {
-  $line-height: 5rem;
-  height: 150px;
+  $line-height: 4.8rem; //
+  height: 10rem;
   background-color: #7fffd41a;
 
   ul {
@@ -51,29 +51,31 @@ header {
 
     nav {
       height: $line-height;
-      margin-top: 1rem;
+      margin-top: 2rem; //
 
       .nav_logo {
         height: $line-height;
         float: left;
-        margin-right: 5rem;
+        margin-right: 4.5rem; //
 
         img {
-          height: 100%;
+          height: 95%; //
         }
       }
 
       .nav_menu {
         li {
-          padding: .5rem 2rem;
+          padding: .5rem 2rem; //
 
           a {
             color: $primary;
             font-family: "Helvetica bold", Arial, sans-serif;
+            font-size: 1;
 
             i {
               color: #cb352d;
-              font-size: 1.2rem;
+              font-size: 1.1rem; //
+              padding-right: .3rem; //
             }
           }
         }
@@ -83,9 +85,9 @@ header {
     .breadcrumb {
 
       ul {
-        height: 40px;
+        height: 3.3rem; //
         font-family: "Helvetica bold", Arial, sans-serif;
-        font-size: .9rem;
+        font-size: .9rem; //
 
         li {
 
@@ -102,7 +104,7 @@ header {
           &:after {
             content: "/";
             color: black;
-            padding: 0 .5rem;
+            padding: 0 .3rem; //
           }
 
           a {
@@ -122,18 +124,19 @@ main {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 100px;
+    top: 7rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
     overflow: hidden;
 
     img {
+
       display: block;
-      height: 500px;
-      float: right;
-      padding-top: 0;
-      padding-right: 18vw;
+      height: 39rem; //
+      // float: right;
+      padding-top: .7rem; //
+      padding-left: 51.5rem; //
       overflow: hidden;
     }
   }
@@ -146,9 +149,10 @@ main {
     .container-large {
 
       h1 {
-        margin-top: 0;
+        margin-top: 2.4rem; //
         margin-bottom: 0;
         line-height: 1;
+        // letter-spacing: 1px; //
 
         span {
           color: $primary;
@@ -157,25 +161,27 @@ main {
 
       h4 {
         font-weight: normal;
-        margin: 2rem 0 .2rem;
+        margin: 2.5rem 0 .4rem; //
       }
 
       ul {
 
         li {
           text-transform: uppercase;
-          line-height: 2.5rem;
-          font-size: .9rem;
+          line-height: 2.6rem; //
+          font-size: .95rem; //
+          // font-family: "Helvetica bold", Arial, sans-serif;
+          // font-weight: normal;
         }
       }
 
       div {
-        margin: 2rem 0 1.2rem;
+        margin: 2.3rem 0 1.6rem; //
         background-color: transparent;
 
         & a:last-child {
           line-height: 1;
-          margin-left: 1.1rem;
+          margin-left: .6rem; //
 
           span {
             display: inline-block;
@@ -199,17 +205,20 @@ main {
         align-items: center;
         justify-content: flex-start;
         position: relative;
-        height: 90px;
+        height: 5rem; //
+        padding-left: .25rem;
 
         div {
           margin: 0;
 
           h6 {
+            // margin: 1rem 0 0;
             margin: 0;
+            padding: 1rem 0 0 0; //
             font-weight: normal;
-            line-height: 1.1;
+            line-height: 1;
             color: $primary;
-            font-size: .9rem;
+            font-size: .95rem; //
           }
 
           p {
@@ -236,13 +245,14 @@ main {
 
         li {
           @extend .advantages;
+          margin-right: 1.6rem;
 
           & div:last-child {
-            margin-right: 2.5rem;
+            margin-right: 0; //
           }
 
-          &:last-child div:last-child {
-            margin-right: 0;
+          &:last-child {
+            margin-left: 1.9rem;
           }
         }
       }
@@ -259,35 +269,39 @@ main {
     .container {
       color: #fff;
       background-color: #7fffd41a;
-      margin: 30px 0;
+      margin: 2.2em 0;
+      // padding: 2.2rem 0;
 
       .wrap_showcase {
-        width: 900px;
+        width: 56%;
         // width: 72vw;
-        height: 450px;
-        margin: 30px auto;
+        height: 27rem;
+        margin: 0 auto;
         background: url("../img/showcase.png") no-repeat center/cover;
+        margin-bottom: 3rem;
 
         h4 {
           color: #fff;
           font-weight: normal;
-          margin-left: 90px;
-          margin-bottom: 2rem;
-          padding-top: 100px;
+          margin-left: 4.2rem;
+          margin-bottom: 1.3rem;
+          padding-top: 6.3rem;
 
           &::after {
             content: "";
             display: block;
-            width: 75px;
+            width: 4.2rem;
             height: 2px;
             background: #fff;
-            margin-top: 20px;
+            margin-top: 1.1rem;
           }
         }
 
         p {
-          width: 370px;
-          margin-left: 90px;
+          width: 24rem;
+          margin-left: 4.2rem;
+          font-size: .87rem;
+          line-height: 1.2;
         }
       }
     }
@@ -297,8 +311,17 @@ main {
 
   .order {
 
+    .hidden {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
     h4 {
       font-weight: normal;
+      // padding: 2rem 0;
     }
 
     .container {
@@ -322,13 +345,6 @@ main {
         }
       }
 
-      .hidden {
-        display: block;
-      }
-
-      .mobile {
-        display: none;
-      }
 
       .container-large {
         background-color: transparent;
@@ -336,12 +352,12 @@ main {
         .row {
           display: grid;
           justify-content: center;
-          grid-column-gap: 40px;
+          grid-column-gap: 4rem; //
           font-size: .9rem;
 
           &-4 {
-            grid-template-columns: 180px 180px 180px 180px;
-            padding-top: 5px;
+            grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem; //
+            padding-top: .5rem;
 
             .row_item {
               position: relative;
@@ -376,7 +392,8 @@ main {
           }
 
           &-3 {
-            grid-template-columns: repeat(3, 180px);
+            grid-template-columns: repeat(3, 12.5rem);
+            margin-top: -2.8rem; //
 
             .row_item {
               position: relative;
@@ -412,7 +429,7 @@ main {
           .row_item {
             text-align: center;
             width: 100%;
-            height: 120px;
+            height: 8.8rem; //
 
             div {
               position: relative;
@@ -434,7 +451,7 @@ main {
       }
 
       .div_buttons {
-        margin: 50px 0;
+        margin: 3.2rem 0; //
 
         .button {
           vertical-align: middle;
@@ -458,19 +475,31 @@ main {
 
     .container-large {
 
+      h4 {
+        margin: 4.2rem 0 3rem;
+      }
+
+      p {
+        font-size: .9rem;
+      }
+
       .row {
         display: grid;
         justify-content: space-between;
 
+        // &:first-child {
+        //   justify-content: left;
+        // }
+
         &-3 {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(3, 19rem);
           justify-items: center;
         }
       }
     }
 
     .div_buttons {
-      padding: 50px 0;
+      padding: 4.8rem 0 3rem;
 
 
       .button {

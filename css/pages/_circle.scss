@@ -1,7 +1,7 @@
 .wrap_circle {
   position: relative;
-  width: 280px; // 310
-  height: 120px; //140
+  width: 19rem; // 280 //
+  height: 8rem; //120 //
   z-index: 1;
   // background-color: #999;
 }
@@ -10,10 +10,10 @@
 .circle-right {
   position: absolute;
   top: 0;
-  width: 90px; // 100
-  height: 90px; //100
+  width: 6rem; // 90 
+  height: 6rem; //90
   border-radius: 50%;
-  border: 15px solid $primary; //20
+  border: 1rem solid $primary; //15
   background-color: #fff;
 }
 
@@ -29,10 +29,10 @@
 
 .circle-1 {
   position: absolute;
-  top: 30px; //32.5
-  left: 30px; //32.5
-  width: 220px; // 235
-  height: 60px; //65
+  top: 2rem; //30
+  left: 2rem; //30
+  width: 15rem; // 220
+  height: 4rem; //60
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 2px 4px rgba(100, 100, 100, 0.2), -1px -.1px 4px rgba(100, 100, 100, 0.2);
@@ -40,8 +40,22 @@
   align-items: center;
 
   div {
-    padding: 0 10px; //17
+    padding: 0 .8rem; //10
   }
+}
+
+.circle-2 {
+  position: absolute;
+  top: 1rem; //50%
+  // transform: translateY(-50%);
+  left: 1rem; //15
+  width: 17rem; //250
+  height: 6rem; //85
+  border: 0px solid #fff;
+  border-radius: 6rem;
+  background-color: #fff;
+  box-shadow: inset 1px 2px 4px rgba(100, 100, 100, 0.2);
+  z-index: -2;
 }
 
 .just_cont_flex_end {
@@ -50,18 +64,4 @@
 
 .self_cont_flex_start {
   width: 60%;
-}
-
-.circle-2 {
-  position: absolute;
-  top: 50%; //22.5
-  transform: translateY(-50%);
-  left: 15px; //25.5
-  width: 250px; //260
-  height: 85px; //95
-  border: 0px solid #fff;
-  border-radius: 42.5px;
-  background-color: #fff;
-  box-shadow: inset 1px 2px 4px rgba(100, 100, 100, 0.2);
-  z-index: -2;
 }
