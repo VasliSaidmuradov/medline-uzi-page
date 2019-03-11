@@ -1291,6 +1291,21 @@ header .container-large nav .nav_menu li a .fa-phone {
     font-size: 20px;
   }
 }
+@media (min-width: 2000px) {
+  html {
+    font-size: 21px;
+  }
+}
+@media (min-width: 2100px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media (min-width: 2200px) {
+  html {
+    font-size: 23px;
+  }
+}
 @media (max-width: 480px) {
   .svg_arrow {
     width: 15px;
@@ -1725,6 +1740,9 @@ header .container-large nav .nav_menu li a .fa-phone {
     font-weight: bold;
     font-size: 1.1rem;
   }
+  main .allows .mobile .wrap_circle p {
+    font-size: 0.7rem;
+  }
   main .allows .mobile .circle-1 {
     position: absolute;
     top: 10px;
@@ -1743,7 +1761,7 @@ header .container-large nav .nav_menu li a .fa-phone {
     padding: 0;
   }
   main .allows .mobile .circle-1 div img {
-    margin-left: 10px;
+    margin: 0 5px 0 10px;
     width: 13px;
     height: 13px;
   }
