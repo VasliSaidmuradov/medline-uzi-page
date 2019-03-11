@@ -658,7 +658,7 @@ footer .container-large ul li div:last-child img {
   main .wrap_img img {
     height: 35rem;
     padding-top: 0.7rem;
-    padding-left: 44rem;
+    padding-left: 52%;
     overflow: hidden;
   }
   main .reg_section .container-large h1 {
@@ -844,7 +844,7 @@ header .container-large nav .nav_menu li a .fa-phone {
     top: 0;
     left: 5rem;
     height: 25rem;
-    padding-left: 30rem;
+    padding-left: 50%;
     overflow: hidden;
   }
   main .reg_section {
@@ -1432,15 +1432,11 @@ header .container-large nav .nav_menu li a .fa-phone {
     overflow: hidden;
   }
   main .wrap_img img {
-    display: block;
-    position: absolute;
     top: 0;
-    left: 180px;
+    left: 100px;
     height: 250px;
-    float: right;
-    padding-top: 40px;
-    padding-right: 0;
-    margin-right: -25px;
+    padding-top: 5rem;
+    padding-left: 55%;
     overflow: hidden;
   }
   main .reg_section {

@@ -244,15 +244,14 @@
       overflow: hidden;
 
       img {
-        display: block;
-        position: absolute;
         top: 0;
-        left: 180px;
+        left: 100px;
         height: 250px;
-        float: right;
-        padding-top: 40px;
-        padding-right: 0;
-        margin-right: -25px;
+        // float: right;
+        padding-top: 5rem;
+        padding-left: 55%;
+        // padding-right: 0;
+        // margin-right: -25px;
         overflow: hidden;
       }
     }
