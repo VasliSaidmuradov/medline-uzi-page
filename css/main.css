@@ -168,19 +168,18 @@ a {
 }
 .bg_img .svg {
   position: absolute;
-  opacity: 0.05;
   z-index: -1;
 }
 .bg_img .svg1 {
   top: -3rem;
-  right: -6rem;
-  width: 45%;
+  right: -9.5rem;
+  width: 49%;
 }
 .bg_img .svg2 {
   top: 27rem;
   left: 2rem;
   width: 48%;
-  opacity: 0.05;
+  opacity: 1;
 }
 .bg_img .svg3 {
   width: 27rem;
@@ -380,7 +379,7 @@ main .showcase .container .wrap_showcase p, main .showcase .container-small .wra
   line-height: 1.2;
 }
 main .order {
-  background-image: linear-gradient(180deg, #fff 0%, rgba(243, 251, 255, 0) 100%);
+  background-image: linear-gradient(180deg, #ffffff 0%, rgba(243, 251, 255, 0) 100%);
   padding-top: 3rem;
 }
 main .order .hidden {
@@ -416,7 +415,8 @@ main .order .container .container-large .row, main .order .container-small .cont
   display: grid;
   justify-content: center;
   grid-column-gap: 4rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 main .order .container .container-large .row-4, main .order .container-small .container-large .row-4, main .order .container-large .container-large .row-4 {
   grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem;
@@ -527,6 +527,7 @@ main .allows .container-large h4 {
 }
 main .allows .container-large p {
   font-size: 0.9rem;
+  font-weight: bold;
 }
 main .allows .container-large .row {
   display: grid;
