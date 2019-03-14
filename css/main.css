@@ -406,8 +406,8 @@ main .order .container .svg5, main .order .container-small .svg5, main .order .c
   left: -9rem;
 }
 main .order .container .svg6, main .order .container-small .svg6, main .order .container-large .svg6 {
-  bottom: -10px;
-  right: -100px;
+  bottom: 0;
+  right: -9rem;
 }
 main .order .container .container-large, main .order .container-small .container-large, main .order .container-large .container-large {
   background-color: transparent;
