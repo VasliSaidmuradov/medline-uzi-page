@@ -426,6 +426,10 @@ main .order .container .container-large .row-4, main .order .container-small .co
 main .order .container .container-large .row-4 .row_item, main .order .container-small .container-large .row-4 .row_item, main .order .container-large .container-large .row-4 .row_item {
   position: relative;
 }
+main .order .container .container-large .row-4 .row_item div:nth-child(2), main .order .container-small .container-large .row-4 .row_item div:nth-child(2), main .order .container-large .container-large .row-4 .row_item div:nth-child(2) {
+  box-shadow: 1px 1.732px 6px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+}
 main .order .container .container-large .row-4 .row_item .round, main .order .container-small .container-large .row-4 .row_item .round, main .order .container-large .container-large .row-4 .row_item .round {
   display: none;
   position: absolute;
@@ -439,9 +443,12 @@ main .order .container .container-large .row-4 .row_item .round, main .order .co
   z-index: 8;
 }
 main .order .container .container-large .row-4 .row_item .clipped, main .order .container-small .container-large .row-4 .row_item .clipped, main .order .container-large .container-large .row-4 .row_item .clipped {
-  background-color: #fff;
-  clip-path: polygon(0 0, 100% 0, 61% 93%, 59% 96%, 57% 99%, 55% 100%, 45% 100%, 43% 99%, 41% 96%, 39% 93%);
-  z-index: 9;
+  background-color: #ffffff00;
+}
+main .order .container .container-large .row-4 .row_item .clipped img, main .order .container-small .container-large .row-4 .row_item .clipped img, main .order .container-large .container-large .row-4 .row_item .clipped img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 main .order .container .container-large .row-4 .row_item .clipped div, main .order .container-small .container-large .row-4 .row_item .clipped div, main .order .container-large .container-large .row-4 .row_item .clipped div {
   background-color: #fff;
@@ -457,6 +464,10 @@ main .order .container .container-large .row-3, main .order .container-small .co
 main .order .container .container-large .row-3 .row_item, main .order .container-small .container-large .row-3 .row_item, main .order .container-large .container-large .row-3 .row_item {
   position: relative;
 }
+main .order .container .container-large .row-3 .row_item div:last-child, main .order .container-small .container-large .row-3 .row_item div:last-child, main .order .container-large .container-large .row-3 .row_item div:last-child {
+  background-color: #fff;
+  box-shadow: 1px 1.732px 6px rgba(0, 0, 0, 0.24);
+}
 main .order .container .container-large .row-3 .row_item .round, main .order .container-small .container-large .row-3 .row_item .round, main .order .container-large .container-large .row-3 .row_item .round {
   display: none;
   position: absolute;
@@ -469,9 +480,13 @@ main .order .container .container-large .row-3 .row_item .round, main .order .co
   border-radius: 50%;
 }
 main .order .container .container-large .row-3 .row_item .clipped, main .order .container-small .container-large .row-3 .row_item .clipped, main .order .container-large .container-large .row-3 .row_item .clipped {
-  background-color: #fff;
-  clip-path: polygon(0 100%, 100% 100%, 61% 7%, 59% 4%, 57% 1%, 55% 0, 45% 0, 43% 1%, 41% 4%, 39% 7%);
   z-index: 9;
+}
+main .order .container .container-large .row-3 .row_item .clipped > img, main .order .container-small .container-large .row-3 .row_item .clipped > img, main .order .container-large .container-large .row-3 .row_item .clipped > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
 }
 main .order .container .container-large .row-3 .row_item .clipped div, main .order .container-small .container-large .row-3 .row_item .clipped div, main .order .container-large .container-large .row-3 .row_item .clipped div {
   background-color: #fff;
@@ -489,12 +504,9 @@ main .order .container .container-large .row .row_item div, main .order .contain
   position: relative;
   width: 100%;
   height: 50%;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.5);
-  z-index: 10;
 }
 main .order .container .container-large .row .row_item div p, main .order .container-small .container-large .row .row_item div p, main .order .container-large .container-large .row .row_item div p {
   margin: 0;
