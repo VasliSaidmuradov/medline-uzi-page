@@ -349,7 +349,7 @@ main .reg_section .container-large .advantages-mobile-wrap {
 }
 main .showcase .container, main .showcase .container-small, main .showcase .container-large {
   color: #fff;
-  margin: 2.2em 0;
+  margin: 2.2em 0 0;
 }
 main .showcase .container .wrap_showcase, main .showcase .container-small .wrap_showcase, main .showcase .container-large .wrap_showcase {
   width: 56%;
@@ -398,13 +398,12 @@ main .order .container, main .order .container-small, main .order .container-lar
 }
 main .order .container .svg, main .order .container-small .svg, main .order .container-large .svg {
   position: absolute;
-  opacity: 0.05;
   z-index: -1;
   width: 45vw;
 }
 main .order .container .svg5, main .order .container-small .svg5, main .order .container-large .svg5 {
-  bottom: -10px;
-  left: -100px;
+  bottom: 0;
+  left: -9rem;
 }
 main .order .container .svg6, main .order .container-small .svg6, main .order .container-large .svg6 {
   bottom: -10px;
