@@ -322,6 +322,8 @@ main {
   // Section Order
 
   .order {
+    background-image: linear-gradient(180deg, #fff 0%, rgba(243, 251, 255, 0) 100%);
+    padding-top: 3rem;
 
     .hidden {
       display: block;
@@ -332,7 +334,9 @@ main {
     }
 
     h4 {
+      // display: inline-block;
       font-weight: normal;
+      margin-top: 0;
       // padding: 2rem 0;
     }
 
