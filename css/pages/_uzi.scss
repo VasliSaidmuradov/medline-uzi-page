@@ -399,13 +399,10 @@ main {
               .clipped {
                 background-color: #ffffff00;
                 // clip-path: polygon(0 0, 100%0, 61%93%, 59%96%, 57%99%, 55%100%, 45%100%, 43%99%, 41%96%, 39%93%);
-                // z-index: 9;
 
                 img {
-                  position: absolute;
                   width: 100%;
                   height: 100%;
-                  // z-index: 9;
                 }
 
                 div {
@@ -421,7 +418,7 @@ main {
 
           &-3 {
             grid-template-columns: repeat(3, 12.5rem);
-            margin-top: -2.8rem; //
+            margin-top: -2.8rem;
 
             .row_item {
               position: relative;
