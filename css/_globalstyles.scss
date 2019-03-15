@@ -73,6 +73,7 @@ html {
   font-size: .75rem;
 
   &-red {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#a24942), to(#cb342e));
     background-image: linear-gradient(0deg, #a24942 0%, #cb342e 100%);
   }
 
@@ -87,6 +88,7 @@ html {
   }
 
   &:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0084c5), to(#00bee3));
     background-image: linear-gradient(#0084c5, #00bee3);
   }
 }
@@ -166,6 +168,7 @@ hr {
 }
 
 .rotateY180 {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
